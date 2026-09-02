@@ -68,12 +68,13 @@
 <body>
 <main>
   <h1>Privacy Policy for Alarmy</h1>
-  <p class="meta">Last updated 12 August 2026</p>
+  <p class="meta">Last updated 30 August 2026</p>
 
   <div class="lede">
     <p><strong>Alarmy collects nothing, sends nothing, and has no servers.</strong>
-    The app makes no network requests of any kind. Everything you create in it
-    stays on your device.</p>
+    The app opens no network connections of its own &mdash; on Android it does
+    not even hold the internet permission. Everything you create in it stays on
+    your device.</p>
   </div>
 
   <h2>What the app stores, and where</h2>
@@ -90,14 +91,56 @@
       copy. It does not keep a link back into your library, and it does not
       read anything you did not explicitly pick.</li>
   </ul>
+  <h2>Sending feedback</h2>
+  <p>Settings has a &ldquo;Send feedback&rdquo; option. It does not send
+     anything itself: it opens a draft in whatever email app you already
+     use, with the message you typed, and nothing leaves your device unless
+     you tap send there.</p>
+  <ul>
+    <li>The draft is pre-filled with the app version, your platform and OS
+        version, and which alarm permissions are missing &mdash; so a report
+        about an alarm not ringing can be acted on.</li>
+    <li>You can read and edit all of it before sending, and delete the draft
+        instead if you would rather not.</li>
+    <li>No alarms, tones, photos or identifiers are included.</li>
+  </ul>
+
+  <h2>Keeping the app up to date</h2>
+  <p>On Android, Alarmy asks the Play Store app already on your phone whether
+     a newer version exists. That is a message between two apps on the same
+     device &mdash; Alarmy opens no connection, and the Play Store, which
+     checks for updates anyway, is the one that uses the network.</p>
+  <p>If an update is marked as required, Google Play shows its own update
+     screen and installs it. Alarmy sends nothing and receives nothing about
+     you.</p>
+  <p>Settings also has a &ldquo;Check for update&rdquo; option, which makes the
+     same local ask and either tells you the app is up to date or opens your
+     app&rsquo;s page in the Play Store. Nothing about you is sent either
+     way.</p>
+  <p>There is no equivalent on iPhone. Apple provides no way for an app to ask
+     what the latest version is, so updates there are handled by the App Store
+     itself and the option is not shown.</p>
+
+  <h2>Rating the app</h2>
+  <p>Settings has a &ldquo;Rate app&rdquo; option, and a one-time prompt
+     appears after your first alarm. Neither sends us anything.</p>
+  <p>With a connection it asks the store &mdash; Google Play, or the App Store
+     on iPhone &mdash; to show its own rating sheet; without one it opens the
+     store listing instead. That is your device&rsquo;s store app doing its own
+     work. Alarmy passes it nothing about you and is told nothing back, not
+     even whether a sheet appeared.</p>
+
   <h2>What the app does not do</h2>
   <ul>
     <li>No accounts, sign-in, or personal details of any kind.</li>
     <li>No analytics, telemetry, crash reporting or usage tracking.</li>
     <li>No advertising, and no advertising identifiers.</li>
-    <li>No third-party services, and no data sold or shared with anyone.</li>
+    <li>No data sold or shared with anyone. The only third-party code is
+        Google Play&rsquo;s own rating sheet and update check, each handed a
+        request and nothing about you.</li>
     <li>No location, contacts, calendar, microphone, camera or health access.</li>
-    <li>No internet access — there is nowhere for data to go.</li>
+    <li>No internet permission on Android &mdash; the app cannot open a
+        connection, so there is nowhere for data to go.</li>
   </ul>
 
   <h2>Permissions, and why each one exists</h2>
@@ -116,6 +159,11 @@
       to keep the tone playing and the screen awake while the alarm rings.</li>
     <li><strong>Ignore battery optimisations</strong> (Android, optional) —
       battery saving can delay an alarm; this keeps an overnight alarm on time.</li>
+    <li><strong>Network state</strong> (Android) &mdash; reading whether the
+      device currently has a connection, so &ldquo;Rate app&rdquo; knows
+      whether to ask for the store&rsquo;s rating sheet or open the listing
+      instead. This is not the internet permission and does not let the app
+      connect to anything.</li>
   </ul>
   <h2>Choosing a tone or a photo</h2>
   <p>Picking a tone or a photo uses the system's own file and photo pickers.
