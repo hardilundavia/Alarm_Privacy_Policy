@@ -68,13 +68,15 @@
 <body>
 <main>
   <h1>Privacy Policy for Alarmy</h1>
-  <p class="meta">Last updated 11 September 2026</p>
+  <p class="meta">Last updated 8 October 2026</p>
 
   <div class="lede">
-    <p><strong>Alarmy collects nothing, sends nothing, and has no servers.</strong>
-    The app opens no network connections of its own &mdash; on Android it does
-    not even hold the internet permission. Everything you create in it stays on
-    your device.</p>
+    <p><strong>Alarmy has no accounts and no servers of its own.</strong>
+    Your alarms, tones, photos and wake-up history stay on your device. The
+    one thing that leaves it is anonymous crash reports and usage statistics,
+    sent through Google Firebase so bugs can be found and fixed &mdash; and
+    you can switch that off in Settings. Messages from us are a separate
+    switch, and it is off unless you turn it on.</p>
   </div>
 
   <h2>What the app stores, and where</h2>
@@ -94,7 +96,86 @@
       writes a second file next to the original, and keeps the original so
       the edit can be changed later. Deleting the tone or wallpaper removes
       both.</li>
+    <li><strong>Your wake-up history</strong> — when each alarm rang and
+      whether you dismissed it, snoozed it or missed it — in the same local
+      database, so the app can show you how you have been getting up. It is
+      kept for about four months and is never sent anywhere.</li>
   </ul>
+  <h2>Crash reports and usage statistics</h2>
+  <p>Alarmy uses two Google services, Firebase Crashlytics and Google Analytics
+     for Firebase, to learn when the app crashes and which features are used.
+     Together with the optional &ldquo;Tips and news&rdquo; described below,
+     this is the app&rsquo;s only use of the internet. Nothing an alarm needs
+     depends on it: with no connection the app works exactly the same, and
+     reports simply wait.</p>
+  <p>You can switch it off at any time in Settings, under &ldquo;Share crash
+     reports and usage&rdquo;. Nothing further is collected once it is off.</p>
+  <ul>
+    <li><strong>Crash reports</strong> &mdash; what went wrong and where in the
+        code, the app version, your device model and operating system version,
+        and when it happened.</li>
+    <li><strong>Usage statistics</strong> &mdash; counts of things like opening
+        the app, saving an alarm and which type it was, plus general
+        information such as your device model, operating system, language and
+        country.</li>
+    <li>These are linked to a random identifier created for this installation,
+        not to your name, an account or an advertising identifier. Advertising
+        identifiers are switched off.</li>
+    <li>What you create is never sent: no alarm labels or times, no tones, no
+        photos and no wake-up history.</li>
+    <li>Google processes this data on our behalf under its own privacy policy,
+        at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+  </ul>
+
+  <h2>Tips and news</h2>
+  <p>The Reminders screen has a &ldquo;Tips and news&rdquo; switch. It is off
+     unless you turn it on. While it is on, Alarmy can receive occasional
+     messages from us through Firebase Cloud Messaging, a Google service.</p>
+  <ul>
+    <li>Turning it on gives your device a push token, a random identifier
+        that lets a message reach it. The token says nothing about who you
+        are.</li>
+    <li>Turning it off deletes the token, and no token exists if you never
+        turned it on.</li>
+    <li>Everyone who has it on gets the same messages. Nothing about your
+        alarms or how you use the app is used to choose them.</li>
+    <li>The other reminders on that screen are separate: they are worked out
+        on your device and use no internet at all.</li>
+  </ul>
+
+  <h2>Reminders</h2>
+  <p>The Reminders screen offers five optional notifications: a bedtime
+     reminder, a warning when no alarm is set for tomorrow, a weekly summary,
+     your streak, and a tip when you have been snoozing a lot. Each has its
+     own switch and all of them are off until you turn them on.</p>
+  <ul>
+    <li>They are worked out on your device, from your own alarms and wake-up
+        history, and scheduled by the device itself.</li>
+    <li>They use no internet. Nothing about them, and nothing they are
+        calculated from, is sent to us or to anyone else.</li>
+    <li>Turning a reminder off cancels it. Which ones you have on is stored
+        only in the app&rsquo;s settings on your device.</li>
+  </ul>
+
+  <h2>Stopping collection and deleting data</h2>
+  <p>Alarmy has no accounts, so the data described above cannot be tied to
+     you by name, and there is no profile for us to look up.</p>
+  <ul>
+    <li><strong>To stop crash reports and usage statistics</strong>, turn off
+        &ldquo;Share crash reports and usage&rdquo; in Settings. It takes
+        effect at once.</li>
+    <li><strong>To stop messages from us</strong>, turn off &ldquo;Tips and
+        news&rdquo;. That deletes the push token.</li>
+    <li><strong>To remove everything on your device</strong>, uninstall the
+        app. That deletes your alarms, tones, photos, wake-up history and
+        settings, and the installation&rsquo;s random identifier with
+        them.</li>
+    <li>Reports already sent are kept by Google for a limited time &mdash;
+        crash reports for 90 days &mdash; and then deleted. Because they
+        carry no name or account, we cannot pick out one person&rsquo;s
+        reports to delete them sooner.</li>
+  </ul>
+
   <h2>Sending feedback</h2>
   <p>Settings has a &ldquo;Send feedback&rdquo; option. It does not send
      anything itself: it opens a draft in whatever email app you already
@@ -137,24 +218,26 @@
   <h2>What the app does not do</h2>
   <ul>
     <li>No accounts, sign-in, or personal details of any kind.</li>
-    <li>No analytics, telemetry, crash reporting or usage tracking.</li>
     <li>No advertising, and no advertising identifiers.</li>
-    <li>No data sold or shared with anyone. The only third-party code is
-        Google Play&rsquo;s own rating sheet and update check, each handed a
-        request and nothing about you.</li>
+    <li>No data sold or shared with anyone for advertising or marketing. The
+        only third-party code is Google Firebase, described above, and Google
+        Play&rsquo;s own rating sheet and update check, each handed a request
+        and nothing about you.</li>
     <li>No location, contacts, calendar, microphone, camera or health access.</li>
-    <li>No internet permission on Android &mdash; the app cannot open a
-        connection, so there is nowhere for data to go.</li>
+    <li>No alarm, tone, photo or wake-up history ever leaves your device.</li>
   </ul>
 
   <h2>Permissions, and why each one exists</h2>
   <p>Alarmy asks only for what an alarm clock needs in order to actually wake
-  you. None of these are used to gather information.</p>
+  you, plus the internet access described above. The alarm permissions are not
+  used to gather information.</p>
   <ul>
     <li><strong>Alarms &amp; reminders / exact alarms</strong> — to ring at the
       exact minute you set rather than whenever the system finds convenient.</li>
     <li><strong>Notifications</strong> — the ringing alarm is a notification;
-      without it the alarm screen cannot open.</li>
+      without it the alarm screen cannot open. The optional reminders in
+      Settings are notifications too. They are worked out on your device and
+      nothing about them is sent anywhere.</li>
     <li><strong>Full-screen notifications</strong> (Android) — so the alarm
       appears over the lock screen, the way the built-in clock does.</li>
     <li><strong>Run at startup</strong> (Android) — alarms are not kept by the
@@ -166,8 +249,10 @@
     <li><strong>Network state</strong> (Android) &mdash; reading whether the
       device currently has a connection, so &ldquo;Rate app&rdquo; knows
       whether to ask for the store&rsquo;s rating sheet or open the listing
-      instead. This is not the internet permission and does not let the app
-      connect to anything.</li>
+      instead.</li>
+    <li><strong>Internet</strong> &mdash; used only to send the crash reports
+      and usage statistics described above, and to receive &ldquo;Tips and
+      news&rdquo; if you turned it on. Nothing an alarm needs uses it.</li>
   </ul>
   <h2>Choosing a tone or a photo</h2>
   <p>Picking a tone or a photo uses the system's own file and photo pickers.
@@ -184,12 +269,14 @@
   Uninstalling the app removes all of it.</p>
 
   <h2>Children</h2>
-  <p>Alarmy is suitable for all ages. Because it collects no data at all, it
-  collects no data from children either.</p>
+  <p>Alarmy is suitable for all ages and is not directed at children. The
+  anonymous crash reports and usage statistics described above are the only
+  data it sends, and they can be switched off in Settings. &ldquo;Tips and
+  news&rdquo; is off unless someone turns it on.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If a future version of the app ever changes what it stores or gains any
-  network capability, this policy will be updated before that version is
+  <p>If a future version of the app ever changes what it stores or what it
+  sends, this policy will be updated before that version is
   released, and the date at the top will change.</p>
 
   <h2>Contact</h2>
