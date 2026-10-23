@@ -68,15 +68,16 @@
 <body>
 <main>
   <h1>Privacy Policy for Alarmy</h1>
-  <p class="meta">Last updated 8 October 2026</p>
+  <p class="meta">Last updated 24 October 2026</p>
 
   <div class="lede">
     <p><strong>Alarmy has no accounts and no servers of its own.</strong>
     Your alarms, tones, photos and wake-up history stay on your device. The
     one thing that leaves it is anonymous crash reports and usage statistics,
     sent through Google Firebase so bugs can be found and fixed &mdash; and
-    you can switch that off in Settings. Messages from us are a separate
-    switch, and it is off unless you turn it on.</p>
+    you can switch that off in Settings. Messages from us and the AI
+    assistant are separate switches, and both are off unless you turn them
+    on.</p>
   </div>
 
   <h2>What the app stores, and where</h2>
@@ -99,13 +100,16 @@
     <li><strong>Your wake-up history</strong> — when each alarm rang and
       whether you dismissed it, snoozed it or missed it — in the same local
       database, so the app can show you how you have been getting up. It is
-      kept for about four months and is never sent anywhere.</li>
+      kept for about four months and is not sent anywhere, except as the
+      summary counts described under &ldquo;AI assistant&rdquo;, if you turn
+      that on and ask about it.</li>
   </ul>
   <h2>Crash reports and usage statistics</h2>
   <p>Alarmy uses two Google services, Firebase Crashlytics and Google Analytics
      for Firebase, to learn when the app crashes and which features are used.
-     Together with the optional &ldquo;Tips and news&rdquo; described below,
-     this is the app&rsquo;s only use of the internet. Nothing an alarm needs
+     Together with the optional &ldquo;Tips and news&rdquo; and &ldquo;AI
+     assistant&rdquo; described below, this is the app&rsquo;s only use of
+     the internet. Nothing an alarm needs
      depends on it: with no connection the app works exactly the same, and
      reports simply wait.</p>
   <p>You can switch it off at any time in Settings, under &ldquo;Share crash
@@ -143,6 +147,37 @@
         on your device and use no internet at all.</li>
   </ul>
 
+  <h2>AI assistant</h2>
+  <p>The Ask button on the Alarms screen opens an optional AI assistant. It
+     is off unless you turn it on, and it asks first, explaining what is
+     sent. It is answered by Google Gemini through Firebase AI Logic, a
+     Google service, so it needs the internet; nothing else in the app
+     does.</p>
+  <ul>
+    <li>What you type in the chat is sent to Google to be answered.</li>
+    <li>The microphone button types what you say into the message box. Your
+        phone&rsquo;s own speech service turns it into text &mdash;
+        Google&rsquo;s on Android, Apple&rsquo;s on iPhone, on the iPhone
+        itself where your language allows. Alarmy receives only the text and
+        keeps no recording, and nothing reaches the assistant until you press
+        Send.</li>
+    <li>Your alarms &mdash; labels, times, repeat days, whether each is on,
+        and its type &mdash; are sent only when a question needs them, as
+        the assistant answers it.</li>
+    <li>Your wake-up history is sent only as summary counts &mdash; how many
+        wake-ups were on time, snoozed or missed, by weekday &mdash; and only
+        when a question needs it. Individual wake-ups are never sent.</li>
+    <li>Never sent: photos, sounds, or anything at all while the assistant
+        is off.</li>
+    <li>When you ask it to, the assistant sets, changes, switches off or
+        deletes alarms on your device. Each change shows Undo, and the change
+        itself is made on your device, not by Google.</li>
+    <li>While the assistant is in beta it uses Google&rsquo;s free service,
+        under which Google may use these chats to improve its products. The
+        chat itself is kept only on your device and is cleared when you turn
+        the assistant off.</li>
+  </ul>
+
   <h2>Reminders</h2>
   <p>The Reminders screen offers five optional notifications: a bedtime
      reminder, a warning when no alarm is set for tomorrow, a weekly summary,
@@ -166,6 +201,9 @@
         effect at once.</li>
     <li><strong>To stop messages from us</strong>, turn off &ldquo;Tips and
         news&rdquo;. That deletes the push token.</li>
+    <li><strong>To stop the AI assistant</strong>, turn off &ldquo;AI
+        assistant&rdquo; in Settings. Nothing more is sent, and the chat is
+        cleared.</li>
     <li><strong>To remove everything on your device</strong>, uninstall the
         app. That deletes your alarms, tones, photos, wake-up history and
         settings, and the installation&rsquo;s random identifier with
@@ -220,11 +258,14 @@
     <li>No accounts, sign-in, or personal details of any kind.</li>
     <li>No advertising, and no advertising identifiers.</li>
     <li>No data sold or shared with anyone for advertising or marketing. The
-        only third-party code is Google Firebase, described above, and Google
+        only third-party code is Google Firebase, including the AI assistant,
+        described above, and Google
         Play&rsquo;s own rating sheet and update check, each handed a request
         and nothing about you.</li>
     <li>No location, contacts, calendar, microphone, camera or health access.</li>
-    <li>No alarm, tone, photo or wake-up history ever leaves your device.</li>
+    <li>No alarm, tone, photo or wake-up history leaves your device, except
+        what the AI assistant is sent to answer a question, if you turn it
+        on.</li>
   </ul>
 
   <h2>Permissions, and why each one exists</h2>
